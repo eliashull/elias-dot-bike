@@ -1,4 +1,4 @@
-/* NEW BryanHull.com Home Page for 2019. Created by Bryan Hull in February 2019 */
+/* Elias.bike page stylings. September 2021 */
 
 /* BASICS */
 
@@ -32,11 +32,18 @@ font-weight: 400;
 /*margin: 15px;*/
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4 {
 color: #eeeeee;
 font-family: 'Pacifico', cursive;
 font-weight: 400;
 margin: 15px;
+}
+
+h5 {
+	color: #eeeeee;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;	
+	margin: 15px;
 }
 
 p{
@@ -49,11 +56,10 @@ a{
 -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 color: inherit;
-font-size:10px;
 }
 
 a:hover {
-color: hotpink;
+color: #fe6802;
 text-decoration: none;
 }
 
@@ -80,6 +86,11 @@ ul {
 #bottom-row{
 margin-bottom: 140px;	
 }
+
+.bg-dark2 {
+	background-color: #1a1a1a;
+}
+
 
 .circle-icon {
     background-image: linear-gradient(120deg, #fe6802 0%, #f0dfb7 100%);
