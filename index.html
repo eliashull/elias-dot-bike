@@ -7,58 +7,444 @@
         <meta name="description" content="Bryan Elias Hull | bryanhull.com">
         <meta name="author" content="Bryan Elias Hull">
         <!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <!-- Google Fonts -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
         <!-- Font Awesome Icons -->
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+            <script src="https://kit.fontawesome.com/f450468980.js" crossorigin="anonymous"></script>
+        <!-- Animate on Scroll Library -->
+			<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- Animate on Scroll Javascript --> 
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- Main Stylesheet -->
             <link href="css/style.css" rel="stylesheet">
+		<!-- Fancybox CSS -->
+			<link rel="stylesheet" href="css/fancybox.css" />
+		<!-- Favicon -->
+			<link rel="shortcut icon" href="favicon.ico">
         <title>Elias.bike</title>
     </head>
     <body>
-	<!-- Default Bootstrap Navigation Menu -->
-		<div class="fixed-top">
-			<div class="collapse" id="navbarToggleExternalContent">
-				<div class="bg-dark2 p-4">
-					<h5 class="heading"><a href="/"><span class="underline--magical">BRYAN</span> ELIAS HULL</a></h5>
-					<div class="d-flex">
-						<ul>
-							<li class="nav-link"><a href="/bikes"><strong>Elias.bike</strong></a></li>
-							<li class="nav-link"><a href="/portfolio">Portfolio</a></li>
-							<li class="nav-link"><a href="/photography">Photography</a></li>
-                            <li class="nav-link"><a href="/music">Music</a></li>    
-							<li class="nav-link"><a href="/">Home</a></li>
-						</ul>
-					</div>
+	<!-- Button to return to Top -->
+        <button onclick="topFunction()" id="topbutton" title="Go to top"><i class="far fa-arrow-alt-circle-up"></i> TOP</button>
+	<!-- SITE NAVIGATION -->
+	<nav class="navbar navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+			<h3 class="navbar-identity"><span class="underline--magical">Elias.bike</span></h3>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><span class="underline--magical">Elias.bike</span></h5>
+				<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#eye-of-the-tiger">The Eye of the Tiger</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#space-dust">Space Dust</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#the-windsor">The Windsor</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#rhinestone-cowboy">Rhinestone Cowboy</a>
+					</li>					
+					<li>
+						<hr />
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Return to BryanHull.com</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</nav>
+	<!-- END SITE NAVIGATION -->
+	<!-- BEGIN SITE CONTENT -->
+	<div id="sitecontent" class="container-fluid page-container">
+		<!-- INTRODUCTION SECTION -->
+        <div class="container intro-container">
+			<div class="row intro-row">
+				<div data-aos="fade-in" data-aos-duration="2000">
+					<h1><span class="underline--magical">Elias.bike</span></h1>
+					<p class="introduction-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin scelerisque quam, ut feugiat sapien convallis ut. Ut at diam quis nulla ultrices mattis sollicitudin id est. Vivamus mattis tincidunt dolor. Nunc vel felis at sem suscipit ultrices in sit amet neque. Sed auctor dictum elit. Duis sit amet eros id enim aliquam varius. Cras id tincidunt enim, nec mollis leo. Donec non lacus et velit elementum ornare. Quisque at luctus magna. Nunc ut felis mauris. Vestibulum malesuada aliquam neque a euismod. Nulla a diam lectus. Phasellus cursus metus neque, sodales bibendum massa rhoncus porta. </p> 
+					<!--<i class="fas fa-bicycle fa-3x circle-icon"></i> -->
 				</div>
 			</div>
-				<nav class="navbar navbar-dark">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-					   <span class="navbar-toggler-icon"></span>
-				    </button>
-                </nav>
-		</div>   
-	<!-- Page content -->
-		<div id="sitecontent" class="container">
-			<h1>Elias.bike</h1>
-			<p>Good things are on the way.</p>
-			<i class="fas fa-bicycle fa-3x circle-icon"></i>
-		</div><!-- End of container -->
-        <div class="fixed-bottom">
-			<div id="footer" class="d-md-flex flex-row justify-content-center align-items-center">
-				<div class="d-flex ml-1">
-					<p>&copy; 2021 Bryan Elias Hull. All Rights Reserved.</p>   
+			<div class="row intro-row" id="main-menu">
+				<div data-aos="fade-in" data-aos-duration="2500">
+					<h3>Check out the bikes...</h3>
+					<a class="icon-link" href="#eye-of-the-tiger"><i class="far fa-arrow-alt-circle-down fa-3x"></i></a>
+				</div>
+			</div>
+			<!--<div class="row intro-row">
+				<a href="#instructional-design" class="button button-fx">Instructional Design</a>
+				<a href="#digital-publishing" class="button button-fx">Digital Publishing</a>
+				<a href="#web-development" class="button button-fx">Web Development</a>
+				<a href="#user-experience" class="button button-fx">User Experience Design</a>
+				<a href="#video-production" class="button button-fx">Video Production</a>
+				<a href="#curriculum-vitae" class="button button-fx">Curriculum Vitae</a>
+			</div>	-->
+		</div>
+		<!-- END OF INTRODUCTION SECTION -->
+		<!-- BEGIN EYE OF THE TIGER -->
+		<div class="row tiger-section-intro justify-content-center align-items-center" id="eye-of-the-tiger">
+			<div data-aos="zoom-in" data-aos-duration="1500"><h2>The Eye of the Tiger</h2></div>
+		</div><!-- End of row -->
+		<div class="container carousel-container">
+			<div class="row">		
+				<div id="tiger-carousel-indicators" class="carousel slide" data-bs-ride="true">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#tiger-carousel-indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#tiger-carousel-indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#tiger-carousel-indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<a href="img/img.jpg" data-fancybox><img src="img/img.jpg" class="d-block w-100" alt="..."></a>
+					</div>
+					<div class="carousel-item">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#tiger-carousel-indicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#tiger-carousel-indicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 				</div>
 			</div><!-- End of row -->
-		</div><!-- Positioning container -->
+		</div><!-- End of container -->
+		<div class="container bike-info-container">
+			<div class="row">
+				<div class="col-md">
+					<h3><span class="underline--magical">The Eye of the Tiger</span></h3>
+					<p>The Eye of the Tiger is a steel fixed gear made to rip around town. Painted in September 2021 and inspired by my favorite NFL team, the Cincinnati Bengals, who would eventually go to Super Bowl LVI. Coincidence?</p>
+					<p>I had the idea to do a tiger themed bike for awhile before picking up a vinyl cutter in order to create the stencils for the job. Initially, I planned on doing the whole bike to look like the fork. After stenciling and painting the fork I decided that might be a little <em>too much</em> tiger action for the whole frame and opted to do a "dark mode" inverted style on the frame instead.</p>
+					<p>As a result, I got a little more creative with the tiger head badge and "Go Get 'em Tiger!" on the top tube. Finished with a Spray.bike clear coat and built up with wide flat bars, Velocity wheels, and a Wald basket for maximum townie cred.</p>
+				</div><!-- End of column -->
+				<div class="col-md">
+					<h5>Specifications</h5>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><strong>Frame:</strong> 56cm Maxway Steel Track</li>
+						<li class="list-group-item"><strong>Fork:</strong> Maxway Steel Fork</li>
+						<li class="list-group-item"><strong>Wheelset:</strong> Velocity Deep V with Origin8 Hubs</li>
+						<li class="list-group-item"><strong>Tires:</strong> Donelley LCV 700x25c Clinchers</li>
+						<li class="list-group-item"><strong>Crankset:</strong> Origin8</li>
+						<li class="list-group-item"><strong>Chain:</strong> KMC Z1 Gold</li>
+						<li class="list-group-item"><strong>Cog:</strong> All-City 20t</li>
+						<li class="list-group-item"><strong>Brake:</strong> Tektro R313 Road Caliper</li>
+						<li class="list-group-item"><strong>Brake Lever:</strong> Tektro Eclipse MT 2.1</li>
+						<li class="list-group-item"><strong>Handlebar:</strong> Brand-X Flat Bar 720mm</li>
+						<li class="list-group-item"><strong>Grips:</strong> FUNN Orange</li>
+						<li class="list-group-item"><strong>Stem:</strong> Bontrager 90mm</li>
+						<li class="list-group-item"><strong>Seatpost:</strong> Brand-X Inline</li>
+						<li class="list-group-item"><strong>Saddle:</strong> Selle Italia X1 XC Flow</li>
+						<li class="list-group-item"><strong>Basket:</strong> Wald 1372</li>
+					</ul>
+				</div><!-- End of column-->
+			</div><!-- End of row -->
+			<div class="row paint-color-row">
+				<h4>Spray.bike Paint Colors</h4>
+					<div class="paint-icon-position">
+						<i class="fas fa-spray-can paint-color-orange"></i>
+						<i class="fas fa-spray-can paint-color-chalkfarm"></i>
+						<i class="fas fa-spray-can paint-color-black"></i>
+						<i class="fas fa-spray-can paint-color-clear"></i>
+					</div>
+			</div><!-- End of row -->
+			<div class="row jump-section-row justify-content-center">
+				<a class="icon-link" href="#space-dust">NEXT <i class="far fa-arrow-alt-circle-down"></i> BIKE</a>
+			</div><!-- End of row -->
+		</div><!-- End of container -->
+		<!-- END OF EYE OF THE TIGER -->
+		<!-- BEGIN SPACE DUST -->
+		<div class="row space-section-intro justify-content-center align-items-center" id="space-dust">
+			<div data-aos="zoom-in" data-aos-duration="1500"><h2>Space Dust</h2></div>
+		</div><!-- End of row -->
+		<div class="container carousel-container">
+			<div class="row">		
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+				</div>
+			</div><!-- End of row -->
+		</div><!-- End of container -->
+		<div class="container bike-info-container">
+			<div class="row">
+				<div class="col-md">
+					<h3><span class="underline--magical--space">Space Dust</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in purus non eros congue dignissim. Ut augue leo, ultricies quis consequat ac, malesuada vitae dui. Mauris id maximus lorem. Fusce condimentum lacus rhoncus, efficitur nisl posuere, ultrices neque. Ut cursus quis massa ut malesuada. Ut interdum sem non lacus facilisis, sit amet pellentesque sem vulputate. Mauris vitae dui ex. In quis finibus sapien. Mauris ultricies faucibus quam, nec pretium lectus congue sit amet. Quisque non neque eget ex vehicula pellentesque a id justo. Mauris lacus ligula, accumsan et suscipit sit amet, finibus non tellus. Fusce feugiat vestibulum diam id tempor. Duis vel luctus erat. </p>
+					<p>Fusce fermentum est ut odio tempor, eget cursus turpis viverra. Nullam a dolor est. Aliquam erat volutpat. Praesent sed nibh dui. Phasellus porttitor leo tellus, convallis ornare augue rhoncus non. Curabitur auctor vel neque ut volutpat. Integer auctor ultricies justo eu molestie. Aliquam ornare tincidunt nibh sit amet imperdiet. Fusce lobortis justo nec gravida vulputate. Morbi sit amet elit nunc. Nulla hendrerit pellentesque enim, eu euismod tortor sollicitudin sed. Fusce non malesuada justo. Quisque a finibus metus. </p>
+				</div><!-- End of column -->
+				<div class="col-md">
+					<h5>Specifications</h5>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><strong>Frame:</strong> 56cm Maxway Steel Track</li>
+						<li class="list-group-item"><strong>Fork:</strong> Maxway Steel Fork</li>
+						<li class="list-group-item"><strong>Wheelset:</strong> Velocity Deep V with Origin8 Hubs</li>
+						<li class="list-group-item"><strong>Tires:</strong> Donelley LCV 700x25c Clinchers</li>
+						<li class="list-group-item"><strong>Crankset:</strong> Origin8</li>
+						<li class="list-group-item"><strong>Chain:</strong> KMC Z1 Gold</li>
+						<li class="list-group-item"><strong>Cog:</strong> All-City 20t</li>
+						<li class="list-group-item"><strong>Brake:</strong> Tektro R313 Road Caliper</li>
+						<li class="list-group-item"><strong>Brake Lever:</strong> Tektro Eclipse MT 2.1</li>
+						<li class="list-group-item"><strong>Handlebar:</strong> Brand-X Flat Bar 720mm</li>
+						<li class="list-group-item"><strong>Grips:</strong> FUNN Orange</li>
+						<li class="list-group-item"><strong>Stem:</strong> Bontrager 90mm</li>
+						<li class="list-group-item"><strong>Seatpost:</strong> Brand-X Inline</li>
+						<li class="list-group-item"><strong>Saddle:</strong> Selle Italia X1 XC Flow</li>
+						<li class="list-group-item"><strong>Basket:</strong> Wald 1372</li>
+					</ul>
+				</div><!-- End of column-->
+			</div><!-- End of row -->
+			<div class="row paint-color-row">
+				<h4>Spray.bike Paint Colors</h4>
+					<div class="paint-icon-position">
+						<i class="fas fa-spray-can paint-color-milan"></i>
+						<i class="fas fa-spray-can paint-color-memphis"></i>
+						<i class="fas fa-spray-can paint-color-black"></i>
+						<i class="fas fa-spray-can paint-color-clear"></i>
+					</div>
+			</div><!-- End of row -->
+			<div class="row jump-section-row">
+				<a class="icon-link" href="#the-windsor">NEXT <i class="far fa-arrow-alt-circle-down"></i> BIKE</a>
+			</div><!-- End of row -->
+		</div><!-- End of container -->
+		<!-- END SPACE DUST -->
+		<!-- BEGIN THE WINDSOR -->
+		<div class="row space-section-intro justify-content-center align-items-center" id="the-windsor">
+			<div data-aos="zoom-in" data-aos-duration="1500"><h2>The Windsor</h2></div>
+		</div><!-- End of row -->
+		<div class="container carousel-container">
+			<div class="row">		
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+				</div>
+			</div><!-- End of row -->
+		</div><!-- End of container -->
+		<div class="container bike-info-container">
+			<div class="row">
+				<div class="col-md">
+					<h3><span class="underline--magical--space">The Windsor</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in purus non eros congue dignissim. Ut augue leo, ultricies quis consequat ac, malesuada vitae dui. Mauris id maximus lorem. Fusce condimentum lacus rhoncus, efficitur nisl posuere, ultrices neque. Ut cursus quis massa ut malesuada. Ut interdum sem non lacus facilisis, sit amet pellentesque sem vulputate. Mauris vitae dui ex. In quis finibus sapien. Mauris ultricies faucibus quam, nec pretium lectus congue sit amet. Quisque non neque eget ex vehicula pellentesque a id justo. Mauris lacus ligula, accumsan et suscipit sit amet, finibus non tellus. Fusce feugiat vestibulum diam id tempor. Duis vel luctus erat. </p>
+					<p>Fusce fermentum est ut odio tempor, eget cursus turpis viverra. Nullam a dolor est. Aliquam erat volutpat. Praesent sed nibh dui. Phasellus porttitor leo tellus, convallis ornare augue rhoncus non. Curabitur auctor vel neque ut volutpat. Integer auctor ultricies justo eu molestie. Aliquam ornare tincidunt nibh sit amet imperdiet. Fusce lobortis justo nec gravida vulputate. Morbi sit amet elit nunc. Nulla hendrerit pellentesque enim, eu euismod tortor sollicitudin sed. Fusce non malesuada justo. Quisque a finibus metus. </p>			
+				</div><!-- End of column -->
+				<div class="col-md">
+					<h5>Specifications</h5>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><strong>Frame:</strong> 56cm Maxway Steel Track</li>
+						<li class="list-group-item"><strong>Fork:</strong> Maxway Steel Fork</li>
+						<li class="list-group-item"><strong>Wheelset:</strong> Velocity Deep V with Origin8 Hubs</li>
+						<li class="list-group-item"><strong>Tires:</strong> Donelley LCV 700x25c Clinchers</li>
+						<li class="list-group-item"><strong>Crankset:</strong> Origin8</li>
+						<li class="list-group-item"><strong>Chain:</strong> KMC Z1 Gold</li>
+						<li class="list-group-item"><strong>Cog:</strong> All-City 20t</li>
+						<li class="list-group-item"><strong>Brake:</strong> Tektro R313 Road Caliper</li>
+						<li class="list-group-item"><strong>Brake Lever:</strong> Tektro Eclipse MT 2.1</li>
+						<li class="list-group-item"><strong>Handlebar:</strong> Brand-X Flat Bar 720mm</li>
+						<li class="list-group-item"><strong>Grips:</strong> FUNN Orange</li>
+						<li class="list-group-item"><strong>Stem:</strong> Bontrager 90mm</li>
+						<li class="list-group-item"><strong>Seatpost:</strong> Brand-X Inline</li>
+						<li class="list-group-item"><strong>Saddle:</strong> Selle Italia X1 XC Flow</li>
+						<li class="list-group-item"><strong>Basket:</strong> Wald 1372</li>
+					</ul>
+				</div><!-- End of column-->
+			</div><!-- End of row -->
+			<div class="row paint-color-row">
+				<h4>Spray.bike Paint Colors</h4>
+					<div class="paint-icon-position">
+						<i class="fas fa-spray-can paint-color-milan"></i>
+						<i class="fas fa-spray-can paint-color-memphis"></i>
+					</div>
+			</div><!-- End of row -->
+			<div class="row jump-section-row">
+				<a class="icon-link" href="#rhinestone-cowboy">NEXT <i class="far fa-arrow-alt-circle-down"></i> BIKE</a>
+			</div><!-- End of row -->
+		</div><!-- End of container -->
+		<!-- END THE WINDSOR -->
+		<!-- BEGIN RHINESTONE COWBOY -->
+		<div class="row rhinestone-section-intro justify-content-center align-items-center" id="rhinestone-cowboy">
+			<div data-aos="zoom-in" data-aos-duration="1500"><h2>Rhinestone Cowboy</h2></div>
+		</div><!-- End of row -->
+		<div class="container carousel-container">
+			<div class="row">		
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/img.jpg" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+				</div>
+			</div><!-- End of row -->
+		</div><!-- End of container -->
+		<div class="container bike-info-container">
+			<div class="row">
+				<div class="col-md">
+					<h3><span class="underline--magical--rhinestone">Rhinestone Cowboy</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in purus non eros congue dignissim. Ut augue leo, ultricies quis consequat ac, malesuada vitae dui. Mauris id maximus lorem. Fusce condimentum lacus rhoncus, efficitur nisl posuere, ultrices neque. Ut cursus quis massa ut malesuada. Ut interdum sem non lacus facilisis, sit amet pellentesque sem vulputate. Mauris vitae dui ex. In quis finibus sapien. Mauris ultricies faucibus quam, nec pretium lectus congue sit amet. Quisque non neque eget ex vehicula pellentesque a id justo. Mauris lacus ligula, accumsan et suscipit sit amet, finibus non tellus. Fusce feugiat vestibulum diam id tempor. Duis vel luctus erat. </p>
+					<p>Fusce fermentum est ut odio tempor, eget cursus turpis viverra. Nullam a dolor est. Aliquam erat volutpat. Praesent sed nibh dui. Phasellus porttitor leo tellus, convallis ornare augue rhoncus non. Curabitur auctor vel neque ut volutpat. Integer auctor ultricies justo eu molestie. Aliquam ornare tincidunt nibh sit amet imperdiet. Fusce lobortis justo nec gravida vulputate. Morbi sit amet elit nunc. Nulla hendrerit pellentesque enim, eu euismod tortor sollicitudin sed. Fusce non malesuada justo. Quisque a finibus metus.</p>			
+				</div><!-- End of column -->
+				<div class="col-md">
+					<h5>Specifications</h5>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><strong>Frame:</strong> 56cm Maxway Steel Track</li>
+						<li class="list-group-item"><strong>Fork:</strong> Maxway Steel Fork</li>
+						<li class="list-group-item"><strong>Wheelset:</strong> Velocity Deep V with Origin8 Hubs</li>
+						<li class="list-group-item"><strong>Tires:</strong> Donelley LCV 700x25c Clinchers</li>
+						<li class="list-group-item"><strong>Crankset:</strong> Origin8</li>
+						<li class="list-group-item"><strong>Chain:</strong> KMC Z1 Gold</li>
+						<li class="list-group-item"><strong>Cog:</strong> All-City 20t</li>
+						<li class="list-group-item"><strong>Brake:</strong> Tektro R313 Road Caliper</li>
+						<li class="list-group-item"><strong>Brake Lever:</strong> Tektro Eclipse MT 2.1</li>
+						<li class="list-group-item"><strong>Handlebar:</strong> Brand-X Flat Bar 720mm</li>
+						<li class="list-group-item"><strong>Grips:</strong> FUNN Orange</li>
+						<li class="list-group-item"><strong>Stem:</strong> Bontrager 90mm</li>
+						<li class="list-group-item"><strong>Seatpost:</strong> Brand-X Inline</li>
+						<li class="list-group-item"><strong>Saddle:</strong> Selle Italia X1 XC Flow</li>
+						<li class="list-group-item"><strong>Basket:</strong> Wald 1372</li>
+					</ul>
+				</div><!-- End of column-->
+			</div><!-- End of row -->
+			<div class="row paint-color-row">
+				<h4>Spray.bike Paint Colors</h4>
+					<div class="paint-icon-position">
+						<i class="fas fa-spray-can paint-color-black"></i>
+						<i class="fas fa-spray-can paint-color-sparkle"></i>
+					</div>
+			</div><!-- End of row -->
+		</div><!-- End of container -->
+		<!-- END THE WINDSOR -->
+		<!-- FOOTER -->
+		<div class="row footer-section justify-content-center align-items-center" id="rhinestone-cowboy">
+			<h3 class="footer-logo">Elias</h3>
+			<p class="footer-text">&copy; 2022 Bryan Elias Hull. All rights reserved.</p>
+			<p>
+				<a href="https://www.instagram.com/eliashull" target="_blank"><i class="fab fa-instagram social-link"></i></a>
+				<a href="https://www.twitter.com/_eliashull" target="_blank"><i class="fab fa-twitter social-link"></i></a>
+				<a href="https://www.strava.com/athletes/bryanhull" target="_blank"><i class="fab fa-strava social-link"></i></a>
+			</p>
+		</div><!-- End of row -->
+	</div><!-- End of container -->
+	<!-- END OF SITE CONTENT -->
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+		
+	<!-- Initialize Animate on Scroll --> 
+	<script type="text/javascript">
+	AOS.init();
+	</script>
+
+	<!-- Return to Top Button Script -->
+    <script type="text/javascript">
+        //Get the button
+        var mybutton = document.getElementById("topbutton");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+	<!-- Fancybox JS -->
+	<script src="js/fancybox.umd.js"></script>
+    <script>
+      //  JavaScript will go here
+    </script>
     </body>
 </html>
